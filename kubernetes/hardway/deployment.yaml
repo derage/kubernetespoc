@@ -1,0 +1,22 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: kubernetespoc
+  labels:
+    app: kubernetespoc
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kubernetespoc
+  template:
+    metadata:
+      labels:
+        app: kubernetespoc
+    spec:
+      containers:
+      - name: kubernetespoc
+        image: derage/kubernetespoc:latest
+        ports:
+        - name: kpoc-port
+          containerPort: 3000

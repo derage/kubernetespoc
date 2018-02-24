@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: kpoc
+spec:
+  selector:
+    app: kubernetespoc
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: kpoc-port

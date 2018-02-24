@@ -1,0 +1,10 @@
+#!/bin/bash
+
+while true; do
+  echo "starting call"
+  curl -v "$1" |grep connected
+  sleep 1
+  echo ""
+  echo "ending call"
+  echo ""
+done

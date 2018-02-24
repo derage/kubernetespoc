@@ -1,0 +1,12 @@
+#!/bin/bash
+IMAGE=derage/kubernetespoc
+TAG=3
+
+echo "building $IMAGE:$TAG"
+docker build -t $IMAGE:$TAG .
+echo "taging $IMAGE:$TAG latest"
+docker tag $IMAGE:$TAG $IMAGE:latest
+echo "Pushing $IMAGE:$TAG and latest"
+docker push $IMAGE:$TAG
+docker push $IMAGE:latest
+echo "done"

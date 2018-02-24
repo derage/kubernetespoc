@@ -1,3 +1,3 @@
 #!/bin/bash
-sleep 5
-yarn start
+sleep 13
+exec yarn start
