@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+var sleep = require('system-sleep');
+var axios = require('axios')
+let url = process.argv[2]
+
+function makecall(url) {
+  axios.get(url)
+    .then(response => {
+
+	    console.log(`Success: ${response.status} ${response.data}` )
+    })
+    .catch(error => {
+        console.log(`FAILED: ${error}`)
+    });
+}
+
+while (true) {
+  makecall(url)
+  sleep(1000);
+}
+
+
+
+// while true; do
+//   echo "starting call"
+//   curl -v "$1" |grep connected
+//   sleep 1
+//   echo ""
+//   echo "ending call"
+//   echo ""
+// done
