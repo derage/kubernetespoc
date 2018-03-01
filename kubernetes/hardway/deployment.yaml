@@ -16,11 +16,11 @@ spec:
     spec:
       containers:
       - name: kubernetespoc
-        image: derage/kubernetespoc:5
-        resources:
-          requests:
-            memory: "5Gi"
-            cpu: "250m"
+        image: derage/kubernetespoc:8
+        # resources:
+        #   requests:
+        #     memory: "5Gi"
+        #     cpu: "250m"
         ports:
         - name: kpoc-port
           containerPort: 3000
@@ -33,9 +33,9 @@ spec:
         #       value: Awesome
         #   initialDelaySeconds: 3
         #   periodSeconds: 3
-        readinessProbe:
-          httpGet:
-            path: /health
-            port: 3000
-          initialDelaySeconds: 15
-          periodSeconds: 3
+        # readinessProbe:
+        #   httpGet:
+        #     path: /health
+        #     port: 3000
+        #   initialDelaySeconds: 15
+        #   periodSeconds: 3

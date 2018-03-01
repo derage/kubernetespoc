@@ -15,8 +15,9 @@ function makecall(url) {
 }
 
 while (true) {
+  console.log("making call");
   makecall(url)
-  sleep(100);
+  sleep(7000);
 }
 
 
