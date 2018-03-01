@@ -1,3 +1,4 @@
 ./kubernetespoc/node_modules
 node_modules/
 .infastructure/terraform_1/.terraform
+.infastructure/create_asg/terraform_2/.terraform
