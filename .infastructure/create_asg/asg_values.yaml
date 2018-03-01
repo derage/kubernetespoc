@@ -1,0 +1,7 @@
+autoscalingGroups:
+  - name: master-us-east-1a.masters.kubepoc.cafarelli.io
+    maxSize: 1
+    minSize: 1
+  - name: nodes.kubepoc.cafarelli.io
+    maxSize: 2
+    minSize: 1

@@ -4,7 +4,8 @@ metadata:
   name: kpoc-ingress
 spec:
   rules:
-  - http:
+  - host: kp.cafarelli.io
+    http:
       paths:
       - path: /
         backend:

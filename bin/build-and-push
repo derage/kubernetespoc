@@ -1,6 +1,6 @@
 #!/bin/bash
 IMAGE=derage/kubernetespoc
-TAG=3
+TAG=7
 
 echo "building $IMAGE:$TAG"
 docker build -t $IMAGE:$TAG .

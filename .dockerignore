@@ -3,3 +3,5 @@ node_modules
 Makefile
 uninstall.sh
 kubernetes
+.utilities
+.infastructure

@@ -3,3 +3,6 @@
 
 #### Kops setup instructions
 https://github.com/kubernetes/kops/blob/master/docs/aws.md
+
+#### Kube apps search
+https://hub.kubeapps.com/

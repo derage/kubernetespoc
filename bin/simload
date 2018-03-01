@@ -16,7 +16,7 @@ function makecall(url) {
 
 while (true) {
   makecall(url)
-  sleep(1000);
+  sleep(100);
 }
 
 
