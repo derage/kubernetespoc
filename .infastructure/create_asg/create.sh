@@ -6,11 +6,11 @@ helm install --name my-release -f $DIR/asg_values.yaml stable/cluster-autoscaler
 
 helm install stable/kubernetes-dashboard
 
-helm install stable/heapster
+helm install stable/heapster --namespace kube-system
 
 cd $DIR/terraform_2 && terraform apply
 
 kubectl apply -f $DIR/nginx-lb-manifest.yaml
 
 
-kubectl autoscale deployment kubernetespoc --cpu-percent=10 --min=1 --max=10
+#kubectl autoscale deployment kubernetespoc --cpu-percent=1 --min=1 --max=10
